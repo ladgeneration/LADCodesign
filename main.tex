@@ -1,19 +1,26 @@
-\documentclass{article}
+\documentclass[preprint,12pt]{elsarticle} 
 \usepackage[utf8]{inputenc}
-
+\makeatletter
+\def\ps@pprintTitle{%
+   \let\@oddhead\@empty
+   \let\@evenhead\@empty
+   \let\@oddfoot\@empty
+   \let\@evenfoot\@oddfoot
+}
+\makeatother
 \title{CoDesign of Learning Analytics Dashboards}
 \author{...}
 \date{January 2021}
  
 \usepackage{natbib}
 \usepackage{graphicx}
-
+\usepackage[hmargin=3cm]{geometry}  
+\linespread{1.5}
 \begin{document}
 
 \maketitle
 
-\section{Introduction}
-\dots
+\section{Introduction} 
 Learning analytics dashboards are designed to use learners' traces to present the computed indicators and other visual elements in a clear and intuitive way \citep{Brouns2015}.
 They have emerged as applications for visualizing and interacting with data collected in a learning environment in various forms \citep{Ramos2015}. \citet{Steiner2014} referred to them as ``visualizations of learning traces''. For \citet{Yoo2015}, a learning dashboard is ``a display which visualizes the results of educational data mining in a useful way''. 
 \citet{Schwendimann2017} identified a lack of an agreed and shared definition and thus proposed the following:
@@ -33,7 +40,7 @@ Despite being fairly recent educational tools, the research found many benefits 
 
 \dots
 
-\section{Leanring analytics Dashboards}
+
 According to \citet{bennett2019four}, we can distinguish  three types of learner dashboards: predictive, modeler and descriptive. 
 \begin{itemize}
     \item Predictive types use machine learning based on computer algorithms that rely on a series of trace data to predict the likelihood that the students outcomes. Many works in this category (i.e, \citep{arnold2014exercise}) use these algorithms to produce at risk rating for individual students.
@@ -43,6 +50,59 @@ According to \citet{bennett2019four}, we can distinguish  three types of learner
 
 \section{Designing leanring analytics dashboards}
 There is a growing body of literature on learner dashboard design, and several literature reviews covering the field. A comprehensive literature review by \citet{bodily2017trends} involved identifying and analyzing 93 papers with respect to functionality, data sources, design analysis, student perceptions, and measured effects. They found that the clear majority of the papers focused on technical features such as data sources, functional aspects (e.g., visualization data, what the dashboard was intended to do) while only two papers reported on how students' behaviours were changed as a result of using the Learner Dashboards and only one-third (34 of 93) focused on students' perceptions of the design.
+\subsection{General design principles}
+Due to the recent emergence of learning analytics dashboards, there is still a scarcity of studies on their design principles \citep{Echeverria2018}. 
+\citet{Yoo2015} argued that, since dashboards are an instrument of communication, effective design is tied to several theoretical foundations, such as human cognition and perception, situational awareness and visualization technologies. In other words, their conceptualization must be based on an understanding of how humans see and think. 
+
+Based on a number of theoretical principles in addition to his practical experience, \citet{Few2013} outlined some good and bad examples of dashboard design. He claimed that the essential characteristics of a dashboard are: 
+1) to be visual displays; 2) to display the information needed to achieve specific objectives, 3) to fit on a single computer screen, and 4) to be used to monitor information at a glance. 
+In terms of human perception, due to the limited working memory of humans, only three or four pieces of visual information can be stored at a time.  Therefore, for more effective memory perception and retention, it is essential to incorporate graphic patterns such as graphs rather than individual numbers. In addition, there must be a proper and reasoned use of pre-attentive attributes such as colour, shape, spatial position and movement.
+From Few's principles, \citet{Yoo2015} drew three main implications: 
+\begin{enumerate}
+	\item the most important information should stand out from the rest in a dashboard, which usually has limited space to fit into a single screen;
+	\item the information in a dashboard should support one's situated awareness and help rapid perception using diverse visualization technologies; and
+	\item the information should be deployed in a way that makes sense, and elements of information should support viewers' immediate goal and end goal for decision making.
+\end{enumerate}
+
+\textit{Situational awareness} deals with disclosing the type of information that is important for a particular purpose or task \citep{Endsley2016}, and thus constitutes another design principle related to dashboards. Three levels can be distinguished:
+\begin{enumerate}
+	\item perception of the elements in the environment;
+	\item comprehension of the current situation; and
+	\item projection of future status.
+\end{enumerate}
+\textit{Situational awareness} is commonly understood in terms of people being consistently aware of what is going on, in order to predict what will be happening as well as to prepare what must be done. 
+
+
+\subsection{Limitation of the existing dashboards design approaches}
+%TODO: COPY/PASTE from etd9277_SShiraziBeheshtiha.pdf
+
+%Echeverria2018
+\subsubsection{Lack of theoretically informed design}
+%The majority of educational dashboards are based on theories and practices related to information and data visualization. 
+One obstacle to the adoption of dashboards is the often existing gap between visual analyses and the objectives of the study  \citep{Roberts2017}. 
+Sometimes, to represent the analyzed data from different angles, designers use complex representations and visualizations that are rather difficult for end users to interpret, especially "at a glance" \citep{Duval2011}. According to the survey reported in \citep{Reimers2015}, the existing dashboards generally have poor interface design and lack of usability testing. The selection of data to be visualized is generally not what the stakeholders in the analysis want or really need because they have not regularly been involved in the design process \citep{Holstein2017}.
+\citet{Bodily2017} also noted the absence of design choice justifications in the conception of several learning dashboards. 
+
+A primary concern of dashboard designers must be the identification of what type of visual representations to implement, and what kind of interaction to offer. 
+\citet{Gavsevic2015} argue that, without careful considerations, the design of dashboards can result in the implementation of fragile and undesirable instructional practices by promoting ineffective feedback types and methods. 
+In order to encourage adoption of learning dashboards, the design needs to be further informed by theories related to learning sciences and educational psychology. \citet{Holstein2017} argued that the success of the dashboards depends on the degree to which its stakeholders have been involved in co-designing them. 
+
+
+\subsubsection{Selection of the input data and the computed indicators}
+A rich variety of measured data and indicators are used and computed in existing dashboards. 
+Dashboard solutions are heavily based on trace analysis, and little attention has been paid to use other data sources such as direct feedback or the quality of the produced artifacts.
+Moreover, as noted by \citet{Schwendimann2017}, there is little work on comparing which indicators and which visualizations are most suitable for the different user data literacy levels.
+In most cases, the chosen visualizations are rather similar to those in other areas of dashboard applications (e.g., web analytics),
+which highlights the lack of specific visualizations and visual metaphors that address the activities of learning and teaching (another potential area for future research) \citep{Schwendimann2017}.
+
+%\subsubsection{Learners' aptitudes are not considered}
+%The review of \citet{Schwendimann2017} revealed that most dashboards are implemented in formal, higher education contexts, following a traditional paradigm in which the teacher is the main user monitoring students. 
+%The review of \citet{Schwendimann2017} revealed that current focus hugely falls on the information that can be extracted from the log data rather than how individual differences might affect the interpretation of the information presented to the learner in terms of reflection and taking actions \citep{Gavsevic2015}. 
+%However, it is well established that the aptitude constructs (e.g., achievement goals, epistemic beliefs, study approaches, and attitudes) are the underlying reasons for observed differences between individuals in a particular context. When it comes to learning analytics visualizations, such constructs may play a role on how individual students interpret the analytics visualizations (reflect on how they are doing) and how those visualizations affect their learning (impact). 
+%For instance, a common method used for reporting analytics is to show a comparison between the learner and the class average on a particular measure. A study shows that for students who had high achievement goals, seeing class average led them to misinterpret what they were doing well because of being slightly above the average \citep{Corrin2015}.
+%Findings of another study carried out by \citet{Wise2014a} revealed that showing a class average in online discussions resulted in mixed responses based on learner's interpretation. While some students find it motivating and useful, others felt it stressful. 
+
+% Many of dashboard tools enable learners to compare and contrast their data with peers. It is commonly hypothesized that such visualizations have negative effects on learners with low levels of self-efficacy \citep{Gavsevic2015}. Therefore, understanding how different learners interact with different Learning Analytics Visualizations can help inform their design in the future. 
 
 
 
