@@ -13,6 +13,7 @@
 \date{January 2021}
  
 \usepackage{natbib}
+\usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage[hmargin=3cm]{geometry}  
 \linespread{1.3}
@@ -197,8 +198,47 @@ To very a scennario prepared the design team, participants use a set of cards re
 \subsection{\citet{prestigiacomo2020learning}}
 
 
-\section{Paddle}
-\subsection{Design Thinking}
+\section{Paddle: Participatory Design of Learning Analytics Dashboards}
+\subsection{Rationale and requirements for dashboard design}
+\subsubsection{Study setting}
+The ANR HUBBLE project (HUman Observatory Based on analysis
+of e-Learning traces) intends to capitalize on the different stages of the massive data analysis processes related to learning. On the user interface level, the preliminary proposal for this project was to feature the automatic, dynamic generation of learning dashboards, associating the results of different indicators derived from the learning data, as a result of the analysis process. The first efforts \cite{dabbebi2017towards} have shown that the generation of such learning dashboards requires the definition of user needs models to allow a generation adapted to the intended use.
+
+In this context, three interconnected research questions emerge around the capture of needs:
+\begin{enumerate}
+    \item How can users of learning dashboards best express their needs in order to provide effective interfaces?
+    \item How to build on these needs in order to create a reference base of interfaces for the generation of learning dashboards?
+    \item Which models derived from user needs can be used to automatically generate effective dashboards?   
+\end{enumerate}
+
+This article focuses on the first question. It introduces a design space that serves as a basis for both the definition of the participatory design tool and the specification of models for capitalizing and generating learning dashboards. As the Hubble project is mainly oriented towards capitalization and reuse, the challenge is indeed to define models to organize the collected elements, following a knowledge engineering approach.
+
+\subsubsection{An iterative refinement process}
+\label{sec:dimensions}
+We have conducted an iterative process to develop our needscapture method. First we carried out a study to assess needs based on questionnaires and semi-directive interviews, and then, after evaluating  the findings of this first study, we organized a participatory workshop with the stakeholders.
+
+
+\paragraph{Phase 1: Questionnaires and interviews}
+We carried out a study to assess the capture needs based on questionnaires and semi-directive interviews with stakeholders from 8 case studies out of the 13 identified by the Hubble project \cite{dabbebi2017towards}. 
+The objective was to develop an explicit understanding of the users' context, tasks, needs and environments in order to enable the dynamic generation of dashboards. This study included a survey and semi-structured interviews.
+
+We adopt the framework proposed by \citet{chatti2012reference}, which identifies four questions around the analysis of learning data. We supplement theses questions with a fifthone, "When", which we felt was important for participants to better understand their interactions with learning dashboards. We thus list five questions where each refers to a contextual dimension "Who, why, what, how, when".
+\begin{description}
+    \item["Who" dimension]  dimension makes it possible to specify the users and their roles.
+    \item["Why" dimension] concerns the identification of users' objectives. In other words, it is used to identify why it is important for the user to use a learning dashboard.
+    \item["What" dimension]  is devoted to identifying the context of the observation objective and the indicators that users wish to visualize in order to improve their learning process.
+    \item["How" dimension]  concerns the description of the most appropriate way (i.e. the most comprehensible by the user) to visualize the indicators. This dimension highlights the notion of user preferences in terms of visualization to facilitate the interpretation of these indicators.
+    \item["When" dimension] makes it possible to specify how the dashboard should be used. 
+\end{description}
+
+After this initial study, we realized that users find it difficult to clearly express their needs through simple questioning. Potential users have significant difficulty projecting themselves into use (when interviewing designers of indicators) or picturing what is possible (when interviewing teachers who often have little culture regarding the use of digital data). Therefore, as a second step, we decided to conduct a participatory workshop.
+
+\paragraph{Phase 2: Participatory workshop}
+We conducted this second study with 8 primary and secondary school teachers who share the same objective of monitoring their students' activities. Teachers use the Tactileo Map [13] application available on the tablet that was created to guide students during a field trip. This tablet provides various tools for students such as a notepad, a camera, an audio recorder and allows to collect traces of their use. This workshop was delivered in an open manner, without tools other than paper and whiteboards. It was followed by a wireframe stage and the development of a model.
+
+During this workshop, the wide range of needs, contexts of use and preferences led to a diversity of proposals that were difficult to formalize. To go further, an adapted tool was therefore necessary.
+
+\subsubsection{A Design Thinking approach}
 Design Thinking is a way of embedding the notion of iterative design into the
 design process. Coming up with ideas, building and testing in a short period of time is
 what Design Thinking brings to the table in comparison to other iterative processes
@@ -209,13 +249,89 @@ empathy and defining goals/expectations from stakeholders. This first part of th
 process can be exploratory and in some cases may set the tone of the project for the
 next stages (IDEO, 2016). 
 
-\subsection{}
 
-\subsection{}
+\subsubsection{Participatory design approach}
+In order to be able to collect user needs in terms of dashboard usage, we have to overcome several difficulties:
+\begin{enumerate}
+    \item Because users are not familiar with the use of dashboards, they have difficulty expressing their visualization needs. As in \citet{xhakaj2017effects}, we consider that the decisional expression linked to the dashboard is structuring for its design.
+    \item Users have little knowledge of the existing opportunities provided either directly by certain tools or through the indicators proposed by the research. In other words, it is difficult to link user demand with research supply. We consider that an initial step is to build on current practices and therefore to allow users to express themselves.
+    \item The context in which the dashboard is used impacts its organizational structure. Therefore, it is necessary to be able to explicitly explain this context, both to help users think about it and to capitalize on these usages for the purposes of reuse.
+\end{enumerate}
 
-\subsection{}
+Participatory design methods are still not widely used in the field of learning analysis \cite{abel2013cross}. Yet they allow for a better expression of user needs and the exploration of design alternatives. \citet{mackay1997radicalement} qualify the use of technologies in this context as "co-adaptive" in the sense that design and use are transformed simultaneously. \citet{knibbe2016} also emphasizes the learning dimension for participants in this type of design, and consequently its impact as a process of appropriation of digital tools by teachers.
 
-\subsection{}
+To be effective, a participatory design method needs to be properly instrumented \cite{sanders2010framework}. We have therefore selected a series of tools to help dashboard users to better express their expectations and needs.
+
+According to \citet{lucero2016designing}, the use of maps can strengthen collaboration, reinforce combinatorial design, and facilitate the exploration of possible linkages between users' decision needs and the numerous proposals for indicators and displays available in design workshops. This feature allows us to address the first two challenges identified.
+
+The use of a board to explore and share the options selected at the design stage allows us to meet our need to express the context and capitalize on it \cite{osterwalder2010business}. To design their design support tool \citet{hallifax2018design} use the notion of design space \cite{shaw2011role} to identify the different alternatives and the structuring decisions of their design. 
+
+As in \cite{rivero2014mockup}, we seek to combine efficient needs capture tools with a progressive collection of these needs to build and enrich design models. The first phase of the project is to collect requirements and interfaces via paper wireframes to facilitate the production of relevant displays, followed by a proposal of mockups in the form of executable interface mock-ups. We focus here on the collection phase, knowing that the automatic generation of dashboards from a model resulting from the requirements remains our main objective.
+
+\subsection{Support for the participatory design of learning analytics dashboard}
+In this section, we present details of the design space for a learning dashboard. This design space allows us to identify the tools that support the capture of these needs. It also serves as a basis for harnessing the expression of requirements and reference dashboards. The second part of this section is devoted to the actual translation of this framework into an adapted framework.
+\subsubsection{Design space for learning analytics dashboard}
+The primary benefit of making a dashboard available to the intended users stems from the need to provide them with data and a representation of this data that is useful and most importantly, meaningful to them. These dashboards must therefore best meet the desired decision-making objectives of the learning process. We conceived our design space around the five dimensions described in \ref{sec:dimensions}. After the preliminary stages of our needs capture process, we have identified several elements that allow us to further characterize these dimensions, listed in \ref{tab:dim}.
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[]
+    \label{tab:dim}
+    \centering
+    \begin{tabular}{@{}ll@{}}
+    \toprule
+    Dimensions & Elements                                                                                                                                             \\ \midrule
+    Who?       & User                                                                                                                                                 \\
+    Why?       & Objective / Decision                                                                                                                                 \\
+    What?      & \begin{tabular}[c]{@{}l@{}}Level of analysis\\ Point of interest\\ Horizon\\ Learning Context\\ Data\\ Data Collection\\ Observed tools\end{tabular} \\
+    How?       & \begin{tabular}[c]{@{}l@{}}Visualization\\ Organization\end{tabular}                                                                                 \\
+    When?      & \begin{tabular}[c]{@{}l@{}}Shared\\ Usage\\ Observation time\end{tabular}                                                                            \\ \bottomrule
+    \end{tabular}
+    \end{table}
+
+\paragraph{"Who?" dimnension}
+Answering the question "Who" may not be so straightforward because, depending on the perspective, dashboards can involve several people. However, setting the learning dashboard in relation to a specific user is essential in order to qualify how the proposed observations will be exploited. The different possible roles are known: Teacher, Learner, Tutor, but also administrator, politician, researcher, etc. The definition of this role is obviously fundamental for the exploration of solutions, as in any interface design process.
+\paragraph{"Why?" dimnension}
+The aim here is to explain the usefulness of the dashboard and to clarify the purpose of its design. As we stated previously, we finally chose to focus on the decision rather than the need for observation. Following the exchanges gathered during the interviews, it seemed preferable for users to indicate their intention to use the dashboard rather than directly express what they want to see on it. Within our design space, participants are asked to choose a decision type from those provided by us or define a new type. This choice is pivotal to the entire dashboard design. We have identified 6 decision types related to the field of pedagogy:
+\begin{description}
+    \item[Adaptation] Adaptation refers to changing a pedagogical sequence or a complete teaching program in response to an observation (factual, following an evaluation, an observation). The teacher remains within the framework of his teaching.
+    \item[Evaluation] Evaluation consists of using the traces and the learning session to assign a mark, to validate skills or to make an assessment.
+    \item[Evolution]  Evolution concerns amendments made to a sequence or teaching as part of a reinvestment or  renewal for the following session.
+    \item[Planification] Observation is used at this point to reorganize the activities of the current learning situation.
+    \item[Remediation] Remediation is a phase that immediately follows a formative assessment and is designed to help a learner address his or her shortcomings. It is often instantiated by support and personalized assistance in addition to instruction.
+    \item[Monitoring (tracking)] Monitoring refers here to observing actors during their learning session without intervention. These are typically active pedagogy sessions, or projects. Afterwards, the idea is to make a synthesis and/or a feedback to the actors. 
+\end{description}
+
+\paragraph{"What?" dimnension}
+This dimension specifies the context in which decisions are made, and defines exactly what the decision is being made about. It includes seven elements to qualify what the observation focuses on: the learning context, the level of analysis, the point of interest, the horizon (or term), the data required, the way it is collected and the tools from which it is derived:
+\begin{description}
+    \item[Analysis level/scope/peremiter] A decision can be made for an individual student, the entire class, or at the school, department (in the geographical sense), academy, or intermediate level.
+    \item[Point of interest] The point of interest qualifies what the observations focus on: the people, their activity, their results, the context, the content, the exchanges.
+    \item[Horizon]  The horizon makes it possible to specify in which term the decision action is situated in relation to the observations: short, medium or long term. This information allows us to categorize the dashboards according to strategic, tactical or operational levels [11].
+    \item[Learning context] Observation and decision making can occur in a classroom, online, or outside the classroom. It can also be mixed, combining different contexts: use of online tools in face-to-face teaching, exploration outside the classroom, and in-class use . . . Participants can also specify how learning is organized (individual, group, . . .).
+    \item[Data]  Participants clarify the data users need to make their decision. Since each specific dashboard is tied to a specific situation, the participants are free to express their own opinions on the dashboard. These data are expressed in the form of indicators, i.e. resulting from possibly complex processes.
+    \item[Data collection] Depending on the decision-making time and the capacity of the tools, data collection must/can be done synchronously for immediate availability, or on the contrary asynchronously, i.e. the data are available after the learning process. This is identified as a source of discrepancy between the expressed need and the technical possibilities, so it is important to highlight it. The resolution of the discrepancy can then be dealt with as soon as possible.
+    \item[Observed tools] It is necessary to specify which tools are used, either hardware (tablet, smartphone, camera, etc.) or software (Digital Work Environment, MOOC platform, social network, etc.). ) during the learning process. These tools typically put constraints on data collection. 
+\end{description}
+\paragraph{"How?" dimnension}
+The "How" corresponds to the most visual part of the space of design, here we are asking participants to consider the two following points view. Firstly, it is important that they specify the most appropriate graphical representation to depict the data they need, they can select from a predefined list of representations or draw their own personal vision of the most suitable graphical representation. Then, they are invited to think about the spatial organization of the dashboard according ti the support used (tablet, smartphone, computer, ect.). 
+
+\paragraph{"When?" dimnension}
+This dimension aims to capture different aspects of the decision-making process, mainly three aspects: the sharing with other users, the time of use, and the observation time on which the decision is based.
+\begin{itemize}
+    \item \textit{Sharing}: The dashboard can be either used personally by a user, or shared between different users for a collective use, for example between a teacher and his students.
+    \item  \textit{Usage}: A dashboard may be necessary in real time with respect to the learning situation or a posteriori, depending on the type of decision.
+    \item  \textit{Time of observation}: At this point, we want to know over which period of time the observation takes place, is it a day, a semester, a session, a sequence, ... This allows to orient the type of dashboard and to filter the indicators.
+\end{itemize}
+\paragraph{"What" dimnension}
+
+\subsubsection{Design}
+
+
+\subsubsection{Design}
+
+\subsubsection{Design}
+
+\subsubsection{Design}
 \section{Conclusion}
 
 
