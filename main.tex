@@ -239,6 +239,9 @@ We conducted this second study with 8 primary and secondary school teachers who 
 During this workshop, the wide range of needs, contexts of use and preferences led to a diversity of proposals that were difficult to formalize. To go further, an adapted tool was therefore necessary.
 
 \subsubsection{A Design Thinking approach}
+
+
+
 Design Thinking is a way of embedding the notion of iterative design into the
 design process. Coming up with ideas, building and testing in a short period of time is
 what Design Thinking brings to the table in comparison to other iterative processes
@@ -322,14 +325,119 @@ This dimension aims to capture different aspects of the decision-making process,
     \item  \textit{Usage}: A dashboard may be necessary in real time with respect to the learning situation or a posteriori, depending on the type of decision.
     \item  \textit{Time of observation}: At this point, we want to know over which period of time the observation takes place, is it a day, a semester, a session, a sequence, ... This allows to orient the type of dashboard and to filter the indicators.
 \end{itemize}
-\paragraph{"What" dimnension}
-
-\subsubsection{Design}
 
 
-\subsubsection{Design}
+\subsection{Support for the exploration of the design space}
+The analysis of the different elemnts identified to qualify the different domains of the design space, can be broken down into four major types.
+\begin{enumerate}
+    \item The decision to be made, which needs to be made explicit and then characterized, and which can be chosen from a set of options from the field of education. Lucero et al. propose the concept of domain inspiration cards to represent these options \cite{lucero2016designing}.
+    \item Elements of characterization around this decision making, which should be made explicit and captured to better characterize the framework of the dashboard. We have therefore chosen to propose a plateau, called a characterization plateau, which allows participants to discuss these elements and then annotate them. The different fields of these elements are recalled in \ref{tab:eltdesc}.
+    \item Free elements (data) that participants will propose at their discretion and that can be collected by means of small papers. We propose blank colored cards, called measuring cards, so that they can be identified, handled, and combined with the visualization cards.
+    \item The elements of visualization, i.e. the different data visualization options, are technological choices that participants will be asked to make during the workshop. Lucero et al. propose the concept of technology maps in their "inspiration workshops" \cite{lucero2016designing}.
+    \item The organization element of the different selected visualizations corresponds to a paper prototyping step. We therefore propose a plateau, said prototyping plateau, corresponding to a display screen of a piece of equipment. This template effectively corresponds to the outline defined for a learning dashboard.
+\end{enumerate}
 
-\subsubsection{Design}
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[]
+    \label{tab:eltdesc}
+    \centering
+    \begin{tabular}{@{}lll@{}}
+    \toprule
+    Element           & Value                                                           & Description                                                                                                                        \\ \midrule
+    User              & free field                                                      & Allows to identify the role of the user                                                                                            \\
+    Analysis level    & Student, Class, School, Department, Academy                     & Allows to indicate the perimeter of the decision                                                                                   \\
+    Point of interest & Person, Activity, Context, Outcome, Content, Social             & Allows to indicate on which element the decision should be centered, and thus the dashboard                                        \\
+    Horizon           & Short, Medium, Long                                             & Specifies when a decision is to be made                                                                                            \\
+    Learning context  & In class, online, outside                                       & Specifies the organizational context of the observed situation, the choices can be multiple                                        \\
+    Data collection   & Synchronous, Asynchronous as well as the tools used in learning & Details the origin of the various data to be taken into account                                                                    \\
+    Observed tools    & free field                                                      & Characterizes the tools used during the learning process                                                                           \\
+    Shared            & Yes, no                                                         & Indicates whether the dashboard will be shared and with whom                                                                       \\
+    Usage             & Real time, a posteriori                                         & Indicates when the dashboard will be used in relation to the observed situation                                                    \\
+    Observation time  & Free space                                                      & Specifies over what duration the situation is observed, it can be a time in hours/minutes or day/month/year, sessions, modules ... \\ \bottomrule
+    \end{tabular}
+    \end{table}
+
+Each of these elements provides space for participants to annotate, complete and clarify their intent, with a view to providing maximum openness to participants while focusing them on designing a learning dashboard.
+\begin{figure}[!htp]
+    \centering
+    \includegraphics[width= \linewidth]{figs/plateau.pdf}
+    \caption{Learning Dashboard Characterization Plateau}
+    \label{fig:plateau}
+    \end{figure}
+First of all, as already mentioned, the central point of the dashboard from the users' point of view is the decision that is easier for them to express than the objective of observation.
+We have therefore developed several so-called domain maps to identify the decision category (Remediation, Adaptation, Evolution, Evaluation, Monitoring, Planning), but also blank decision maps to let participants suggest other possibilities. These decision cards summarize on the back what the category means and on the front they provide space for participants to elaborate on their decision: Why do they need to make this decision? What
+actions do they intend to implement? How does it fit into their pedagogy? These are the blue cards visible in the upper left corner of the characterization plateau in \ref{fig:plateau}.
+
+On the characterization plateau, the location of the decision map is in the upper left corner so that participants collaborating on the plateau maintain a permanent view of this objective. This position was chosen to highlight the pivotal nature of this dimension. The plateau is then divided into different areas to specify the general context of the dashboard. A place is provided to precise the target user(s) of the dashboard. For each of the zones, the participants have the opportunity to provide details explaining their choices. The lists on the board are not fixed, participants can propose new values.
+
+The purpose of this first plateau is to clarify what the dashboard is, its usefulness and its content. This is why we have left an important place on the plateau for the participants to design their content. They can use two types of cards: the measurement cards  and the visualization cards (respe. green and purple cards on figure \ref{fig:plateau}).
+\begin{itemize}
+    \item Measurement cards are blank cards in which it is necessary to describe the data that participants want to see in order to make their decision. They are asked to be accurate and to explain the data. For example, "I want to visualize learner engagement in the forum, so I need the number of messages posted and read per learner and per session". These measurement cards will then be associated with one or more visualization cards.
+    \item Visualization cards depict different possibilities for graphically representing the data. For this purpose, participants are given a visual example of the representation, and are asked to indicate the title of their graph, the location of the data to be represented (for example, learners on the x-axis and the number of messages on the y-axis). They also have a space on the map to specify if needed their expectations from this visualization. To stimulate their creativity, we have designed blank visualization cards so that participants can propose their own graphical representation that they can easily understand.
+\end{itemize}
+Combining these two types of cards allows to associate elements of the "How" dimension with elements of the "What" dimension in a very flexible way.
+
+For the prototyping, we invite the participants to think about to the formatting of their dashboards. For this, we offer several prototyping plateaus representing different equipment (web browser, smartphone, tablet). Participants are then asked to place the visualization cards from Step 1 in the locations they feel are most appropriate. They can also add artefacts describing the dashboard functionalities (button, refresh, title, scroll bar, menu, functions: filter, zoom, hide, print, save as image, etc.).
+
+\subsection{User workshops}
+In this section, we describe how to use our tool in a participatory workshop and then provide some initial feedback on its use.
+\subsubsection{workshop setup}
+A user workshop consists of 5 steps: introduction, dashboard characterization, dashboard prototyping, presentation, and summary. We adopt the basic process proposed by \citet*{lucero2016designing} and introduce a specific step for the layout of the dashboard.
+
+\paragraph{Introduction}
+The workshop starts with a presentation of the plateaux and maps (decision, measurement, visualization). Presentations are typically made by a facilitator whose task it is to lead the discussion. The maps can be presented either by the facilitator or by specialists in the field and/or in dashboard design. Participants are divided into teams of 2 to 6 people.
+ 
+\paragraph{Dashboard characterization}
+This step refers to the phase of co-creating and combining ideas. Participants are encouraged to specify their need through the first stage (see Figure 1) and the decision map. The discussion can be organized as they wish, but the goal is to fill in the different sections of the plateau. In addition, the participants can define the different measures they wish to have and associate visualization modes to these measures.
+This combination step represents the crucial part of moving from the expression of the intended decision to the visualization objective. Having cards allows participants to associate several measures with a visualization and to combine several visualizations to make interaction with the measures tangible. In this phase, the facilitator plays an important role in encouraging participants to explore other combinations and to formalize their ideas to the best of their ability. Participants can write on the plateau their explanations or the justification of their choices, which will help in the creation of the dashboard. The result of this step is twofold : (i) a shared and clear understanding of the needs (ii) a collection of the needs of the dashboard.
+
+\paragraph{Dashboard prototyping}
+This step is intended for the visual representation of the dashboard, both at the organization and visualization level as well as at the interaction level, using the trays representing a selected piece of equipment. The support provided by a dashboard designer can motivate the participants to develop their projection in this future tool intended for them. This step concludes the phase of convergence towards the expressed need. The result of this step is a first hardcopy prototype established by the participants.
+
+\paragraph{Representation}
+After the two creation steps, the participants are asked to take the time to consolidate their results and the concepts they have chosen. If several groups are present, the different groups can do a cross-referenced restitution. This step allows a pooling of proposals.
+
+\paragraph{Sumarry}
+After the workshop, the proposed new maps and dashboards are collected with three complementary objectives: production, capitalization and evaluation.
+\begin{itemize}
+    \item \textit{Production.} This collection allows, through the dashboard generation process, to produce a dashboard matching the expressed needs.
+    \item \textit{Capitalization.} Capitalization covers all the elements proposed during the workshop, to feed the Hubble project's study base in general and the base used to generate learning dashboards in particular. New maps may be produced to complete the tool presented here.
+    \item \textit{Evaluation.} Evaluation of the tool and the workshop process are ensured for improvement.
+\end{itemize}
+
+
+\subsubsection{Initial user feedback}
+This participatory design tool has been tested in two different contexts. A first test workshop was set up with teachers in computer science OTCs; a presentation and test workshop was proposed during national meetings between researchers and national education supervisory staff. During each of these tests, the conduct of the workshop was observed and filmed, with the agreement of the participants. A satisfaction questionnaire was also used to gather participants' opinions.
+
+\subsubsection{Workshop with computer scientists}
+This first test in an educational context was carried out with two test groups of 4 and 2 teachers in the DUT Informatique. The first group (G1) consisted of a teacher in charge of the pedagogical situation to be observed and 3 colleagues wishing to collaborate on the design of his dashboard. The second group (G2) has a different profile as it consists of 2 teachers involved in the same learning situation with the same students. 
+
+Both groups started in the same way to analyze the decision cards in order to select the most appropriate one. The first group came up with several possible decisions and focused on the evaluation as it seemed like a map with a wider scope. The second group went directly to the decision related to monitoring as theu were in a tutored project situation with a necessary follow-up for supervision. 
+
+Secondly, the two groups took different paths in the conception phase. Group G1 exploited the maps and annotated them. They made numerous hypotheses and produced many data maps, not knowing if all of them would be useful in the end. Group G2 started by thinking about the tool needed for the students to express their progress through the different phases of the project, which is the same as describing the data they need, but they did not use any maps. In the end, they constructed a data grid. 
+
+Similarly, when it came to graphical representation, the G1 group made the most of the maps (see Figure 2). They filtered their dataset to keep only the main points and realized that there were clearly two sets of information corresponding to two types of decisions: remediation and evolution. They therefore reconsidered their first choice of decision. Group G2 took inspiration from the visualization maps to develop a new type of graphical representation corresponding to a composition of several maps. They then drew the graphic representation they needed.
+
+Finally, on the section related to the design of the dashboard interface, the G2 group was satisfied with its summary graph for monitoring, while the G1 group imagined 2 different and disconnected interfaces, which reflects the fact that decision is a central point and that clarifying it allows participants to organize the dashboard in a different way. 
+
+Both groups agree that the proposed materials are pleasant to use, encourage and energize the exchange. The two groups had very different experiences with lively debates, which confirms the quality of the support for creativity. The choice to highlight the decision objective of the dashboard as a pivotal element of the design was effective in allowing participants to focus on an explicit need.
+
+Comparing with the workshops held previously, especially the workshop with Tactileo Map teachers, already mentioned in section 2.2, we notice a saving of time, a better productivity and an intensification of exchanges. Indeed, during our first study, we had grouped the teachers in teams of two and we had to play an important role as facilitators. We had to question the teachers and push them to think. This took them out of their comfort zone and produced interesting results, but the full-day session was challenging. Thanks to our design spaces, this new session was reduced to two and a half hours, the exchanges were more natural and our role was reduced to observation as well as answering a few comprehension questions. Moreover, during the first session, we had only obtained a description of the learning situation, a list of data and some means of representation. In this workshop, we also obtained the information related to the decision as well as the dashboard interface mock-ups corresponding to what teachers needed (see Figure 3).
+
+\subsubsection{Presentation workshop for national education inspectors}
+This workshop made it possible to constitute two groups of four and three participants respectively. In both groups, a great dynamic of exchanges was set up, and the participants were able to test and discuss many options on the different dimensions of the design space. Compared to the previous workshop, we observed two other modes of progress, which seems to confirm that the proposed tool does not restrict the flow of exchanges. Both groups actually propose dashboards corresponding to a need identified in a limited time. 
+
+\subsubsection{Questionnaire results}
+The size of the group does not allow for a statistical analysis of our questionnaire. This questionnaire includes seven questions asking for a level of agreement on a Lickert scale with 5 levels. Two questions deal with the handling of the tool ( plateaux and maps), three questions on the quality of the resulting solution (precision, originality, relevance) and two on group work (dynamics, convergence). Two open-ended questions allow the participants to express their opinion. Overall, the level of satisfaction seems high (no answer below 3), with a majority of answers at level 4 or 5. Among these, the question "The plateaux and the cards helped to create a good group dynamic" received the best result with a response rate at level 5 of more than 75\%.
+
+\subsubsection{Future test}
+Following the workshop with the national education inspectors, we were asked to make the materials available to facilitate the organization of workshops in the academies. A kit is thus available in the Productions section of the Hubble project website.
+
+\subsection{Conclusion}
+Drawing inspiration from participatory design approaches used in game design [6] or in entrepreneurship [10], we propose in this article a design space through a support tool for the participatory design of learning dashboards, and its implementation in the framework of participatory workshops. This tool combines a board and maps supporting both decision support and the provision of design alternatives. It meets the dual objective of expressing user needs and capitalizing on these needs and the corresponding dashboards. 
+
+The initial feedback from a test workshop is encouraging, and shows that this type of workshop effectively facilitates cooperation and further exploration of alternatives. According to Mackay and Fayard [9] and Knibbe [7], participation in such workshops can also contribute to developing the appropriation of such tools by the participants. This hypothesis seems particularly interesting in the context of Learning Analytics in which potential users often lack maturity in the use of such digital devices, whereas relevant feedback is a source of appropriation of digital practices.
 
 \subsubsection{Design}
 \section{Conclusion}
