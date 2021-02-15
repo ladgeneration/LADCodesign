@@ -166,53 +166,13 @@ analytics in several key ways.
 
 The benefits of co-designing a dashboard with the collaboration of multiple stakeholders with diverse perspectives are numerous. A dashboard design team should include education administrators, technology experts, data managers and, most importantly, learners. A co-design approach encourages alignment among multiple stakeholders with the purpose and main goal of the dashboard, and ensures consistent implementation by anticipating obstacles or potential difficulties in adopting the system, and increases innovation capacity and efficiency \citet{boscardin2018twelve}. A participatory approach also facilitates opportunities for consensus building and the creation of shared mental models for key learner outcomes, as well as the appropriate interpretation and use of evaluation data by multiple stakeholders. As pointed out by \citet{schuler1993participatory}, a co-design approach reflects a participatory design movement that emphasizes mutual learning, with users learning about the opportunities and constraints of the technology while designers learn about user practices and perspectives.
 
-\subsection{Techniques for codesign in LA}
 
 
-\section{Related Work}
-Co-design techniques have started to attract the attention of some researchers and
-practitioners within the learning analytics community, especially for learner
-consultation (Holstein, McLaren,  Aleven, 2017; McPherson, Tong, Fatt,  Liu, 2016;
-Roberts., Howell.,  Seaman., 2016), to understand privacy concerns (Slade 
-Prinsloo, 2015), for tailoring support for learners (Madeline Huberth, Nicole Michelotti,
- McKay, 2013), for designing learning activities (Könings, Seidel,  van Merriënboer,
-2014) and for designing dashboards (Corrin  Barba, 2015).
-\subsection{LA-DECK: a card-based learning analytics co-design tool \cite{Alvarez2020}}
-\subsection{\citet{prestigiacomo2020learning}}
-\subsection{\citet{prestigiacomo2020data}}
-
-\subsection{\citet{ruiz2018participatory}}
-The authors propose a method which consists in the application of two techniques.
-\subsubsection*{Technique to Capture the Mental Model of Domain Experts (CaM CaM2DET)}
-This technique aimed to capturing the expert’s mental model in relation to the domain data. The implementation of the method consists in first conducting a literary review by the design team and experts to construct  taxonomies or visual frameworks that are then used for brainstorming to constrcut all the domain concepts. Once the experts have generated a list of concepts, the designers present the concepts resulting from the review. Then, the secondary concepts (attributes) that describe main concepts (entities) are grouped and a conceptual model is constructed from them by the experts indivisually. Later, they fill the instrument to establish the relationships between the main concepts. The concepts are organized in a tree in order to be able to identify "composition-aggregation" relationships.
-
-Diverse types of resources can be used at this stage, including post-it notes, pens, pencils, erasers, a video-camera, and bond paper with the structures of different taxonomies according to the problem domain.
-
-\subsubsection*{Prototyping Technique for Conceptual Design (ProTCD)}
-This technique is used by the design team and stakeholders particpants for the structural design (layout) of the interface, taking into account the data from that domain. 
-To very a scennario prepared the design team, participants use a set of cards reprseseting critea (interaction forms, how to perform a task, etc) and a configuration panelusede as an aid to delimit the set of criteria to be used and establish rules. This allows participants to discuss different options for the each criteria and select them accoriding to the sceranio thy wish to creaate. Using the configuration, an outline taking into account the selected elements and operational concepts is designed, and the functionality and interaction of the interface elements is discussed. Each new idea is written in a post-it note. The results are explained by group member(s) while they are being recorded with a camcorder.
-
-
-\subsection{\citet{prestigiacomo2020learning}}
-\subsection{\citet{prestigiacomo2020learning}}
-\subsection{\citet{prestigiacomo2020learning}}
 
 
 \section{Paddle: Participatory Design of Learning Analytics Dashboards}
-\subsection{Rationale and requirements for dashboard design}
-\subsubsection{Study setting}
-The ANR HUBBLE project (HUman Observatory Based on analysis
-of e-Learning traces) intends to capitalize on the different stages of the massive data analysis processes related to learning. On the user interface level, the preliminary proposal for this project was to feature the automatic, dynamic generation of learning dashboards, associating the results of different indicators derived from the learning data, as a result of the analysis process. The first efforts \cite{dabbebi2017towards} have shown that the generation of such learning dashboards requires the definition of user needs models to allow a generation adapted to the intended use.
-
-In this context, three interconnected research questions emerge around the capture of needs:
-\begin{enumerate}
-    \item How can users of learning dashboards best express their needs in order to provide effective interfaces?
-    \item How to build on these needs in order to create a reference base of interfaces for the generation of learning dashboards?
-    \item Which models derived from user needs can be used to automatically generate effective dashboards?   
-\end{enumerate}
-
-This article focuses on the first question. It introduces a design space that serves as a basis for both the definition of the participatory design tool and the specification of models for capitalizing and generating learning dashboards. As the Hubble project is mainly oriented towards capitalization and reuse, the challenge is indeed to define models to organize the collected elements, following a knowledge engineering approach.
-
+\subsection{Introduction}
+\subsection{Rationale and requirements for dashboard codesign}
 \subsubsection{An iterative refinement process}
 \label{sec:dimensions}
 We have conducted an iterative process to develop our needscapture method. First we carried out a study to assess needs based on questionnaires and semi-directive interviews, and then, after evaluating  the findings of this first study, we organized a participatory workshop with the stakeholders.
@@ -339,10 +299,14 @@ The analysis of the different elemnts identified to qualify the different domain
 
 % Please add the following required packages to your document preamble:
 % \usepackage{booktabs}
+\begingroup
+\setlength{\tabcolsep}{10pt} % Default value: 6pt
+\renewcommand{\arraystretch}{1.5} % Default value: 1
 \begin{table}[]
+    \footnotesize
     \label{tab:eltdesc}
     \centering
-    \begin{tabular}{@{}lll@{}}
+    \begin{tabular}{@{}p{2.7cm}p{4.5cm}p{8.2cm}@{}}
     \toprule
     Element           & Value                                                           & Description                                                                                                                        \\ \midrule
     User              & free field                                                      & Allows to identify the role of the user                                                                                            \\
@@ -350,13 +314,14 @@ The analysis of the different elemnts identified to qualify the different domain
     Point of interest & Person, Activity, Context, Outcome, Content, Social             & Allows to indicate on which element the decision should be centered, and thus the dashboard                                        \\
     Horizon           & Short, Medium, Long                                             & Specifies when a decision is to be made                                                                                            \\
     Learning context  & In class, online, outside                                       & Specifies the organizational context of the observed situation, the choices can be multiple                                        \\
-    Data collection   & Synchronous, Asynchronous as well as the tools used in learning & Details the origin of the various data to be taken into account                                                                    \\
+    Data collection   & Synchronous, Asynchronous, Tools used in learning & Details the origin of the various data to be taken into account                                                                    \\
     Observed tools    & free field                                                      & Characterizes the tools used during the learning process                                                                           \\
     Shared            & Yes, no                                                         & Indicates whether the dashboard will be shared and with whom                                                                       \\
     Usage             & Real time, a posteriori                                         & Indicates when the dashboard will be used in relation to the observed situation                                                    \\
     Observation time  & Free space                                                      & Specifies over what duration the situation is observed, it can be a time in hours/minutes or day/month/year, sessions, modules ... \\ \bottomrule
     \end{tabular}
     \end{table}
+    \endgroup
 
 Each of these elements provides space for participants to annotate, complete and clarify their intent, with a view to providing maximum openness to participants while focusing them on designing a learning dashboard.
 \begin{figure}[!htp]
@@ -417,14 +382,26 @@ Both groups started in the same way to analyze the decision cards in order to se
 
 Secondly, the two groups took different paths in the conception phase. Group G1 exploited the maps and annotated them. They made numerous hypotheses and produced many data maps, not knowing if all of them would be useful in the end. Group G2 started by thinking about the tool needed for the students to express their progress through the different phases of the project, which is the same as describing the data they need, but they did not use any maps. In the end, they constructed a data grid. 
 
-Similarly, when it came to graphical representation, the G1 group made the most of the maps (see Figure 2). They filtered their dataset to keep only the main points and realized that there were clearly two sets of information corresponding to two types of decisions: remediation and evolution. They therefore reconsidered their first choice of decision. Group G2 took inspiration from the visualization maps to develop a new type of graphical representation corresponding to a composition of several maps. They then drew the graphic representation they needed.
+\begin{figure}[!htp]
+    \centering
+    \includegraphics[width= \linewidth]{figs/fig2.pdf}
+    \caption{A characterization plateau at the end of the first user workshop}
+    \label{fig:fig2}
+    \end{figure}
+
+    Also, in terms of graphical representation, the G1 group made good use of the maps (see Figure \ref{fig:fig2}). They filtered their dataset to keep only the main points and realized that there were clearly two sets of information corresponding to two types of decisions: remediation and evolution. They therefore reconsidered their first choice of decision. Group G2 took inspiration from the visualization maps to develop a new type of graphical representation corresponding to a composition of several maps. They then drew the graphic representation they needed.
 
 Finally, on the section related to the design of the dashboard interface, the G2 group was satisfied with its summary graph for monitoring, while the G1 group imagined 2 different and disconnected interfaces, which reflects the fact that decision is a central point and that clarifying it allows participants to organize the dashboard in a different way. 
 
 Both groups agree that the proposed materials are pleasant to use, encourage and energize the exchange. The two groups had very different experiences with lively debates, which confirms the quality of the support for creativity. The choice to highlight the decision objective of the dashboard as a pivotal element of the design was effective in allowing participants to focus on an explicit need.
 
-Comparing with the workshops held previously, especially the workshop with Tactileo Map teachers, already mentioned in section 2.2, we notice a saving of time, a better productivity and an intensification of exchanges. Indeed, during our first study, we had grouped the teachers in teams of two and we had to play an important role as facilitators. We had to question the teachers and push them to think. This took them out of their comfort zone and produced interesting results, but the full-day session was challenging. Thanks to our design spaces, this new session was reduced to two and a half hours, the exchanges were more natural and our role was reduced to observation as well as answering a few comprehension questions. Moreover, during the first session, we had only obtained a description of the learning situation, a list of data and some means of representation. In this workshop, we also obtained the information related to the decision as well as the dashboard interface mock-ups corresponding to what teachers needed (see Figure 3).
-
+Comparing with the workshops held previously, especially the workshop with Tactileo Map teachers, we notice a saving of time, a better productivity and an intensification of exchanges. Indeed, during our first study, we had grouped the teachers in teams of two and we had to play an important role as facilitators. We had to question the teachers and push them to think. This took them out of their comfort zone and produced interesting results, but the full-day session was challenging. Thanks to our design spaces, this new session was reduced to two and a half hours, the exchanges were more natural and our role was reduced to observation as well as answering a few comprehension questions. Moreover, during the first session, we had only obtained a description of the learning situation, a list of data and some means of representation. In this workshop, we also obtained the information related to the decision as well as the dashboard interface mock-ups corresponding to what teachers needed (see Figure \ref{fig:fig3}).
+\begin{figure}[!htp]
+    \centering
+    \includegraphics[width= \linewidth]{figs/fig3.pdf}
+    \caption{An example of a prototyping plateau at the end of the first user workshop}
+    \label{fig:fig3}
+    \end{figure}
 \subsubsection{Presentation workshop for national education inspectors}
 This workshop made it possible to constitute two groups of four and three participants respectively. In both groups, a great dynamic of exchanges was set up, and the participants were able to test and discuss many options on the different dimensions of the design space. Compared to the previous workshop, we observed two other modes of progress, which seems to confirm that the proposed tool does not restrict the flow of exchanges. Both groups actually propose dashboards corresponding to a need identified in a limited time. 
 
@@ -434,14 +411,13 @@ The size of the group does not allow for a statistical analysis of our questionn
 \subsubsection{Future test}
 Following the workshop with the national education inspectors, we were asked to make the materials available to facilitate the organization of workshops in the academies. A kit is thus available in the Productions section of the Hubble project website.
 
-\subsection{Conclusion}
-Drawing inspiration from participatory design approaches used in game design [6] or in entrepreneurship [10], we propose in this article a design space through a support tool for the participatory design of learning dashboards, and its implementation in the framework of participatory workshops. This tool combines a board and maps supporting both decision support and the provision of design alternatives. It meets the dual objective of expressing user needs and capitalizing on these needs and the corresponding dashboards. 
 
-The initial feedback from a test workshop is encouraging, and shows that this type of workshop effectively facilitates cooperation and further exploration of alternatives. According to Mackay and Fayard [9] and Knibbe [7], participation in such workshops can also contribute to developing the appropriation of such tools by the participants. This hypothesis seems particularly interesting in the context of Learning Analytics in which potential users often lack maturity in the use of such digital devices, whereas relevant feedback is a source of appropriation of digital practices.
 
-\subsubsection{Design}
+
 \section{Conclusion}
+Drawing inspiration from participatory design approaches used in game design \cite{hallifax2018design} or in entrepreneurship \cite{osterwalder2010business}, we propose in this article a design space through a support tool for the participatory design of learning dashboards, and its implementation in the framework of participatory workshops. This tool combines a board and maps supporting both decision support and the provision of design alternatives. It meets the dual objective of expressing user needs and capitalizing on these needs and the corresponding dashboards. 
 
+The initial feedback from a test workshop is encouraging, and shows that this type of workshop effectively facilitates cooperation and further exploration of alternatives. According to \citet{mackay1997radicalement} and \citet{knibbe2016}, participation in such workshops can also contribute to developing the appropriation of such tools by the participants. This hypothesis seems particularly interesting in the context of Learning Analytics in which potential users often lack maturity in the use of such digital devices, whereas relevant feedback is a source of appropriation of digital practices.
 
 \bibliographystyle{plainnat}
 \bibliography{references}
