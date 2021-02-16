@@ -187,8 +187,6 @@ Learning persona allows modeling and summarizing essential information about the
 According to \citet{zhang2016data}, personas must help answer three basic questions: \textit{what are the learner’s needs, what kinds of limitations do they have, and what are their expectations?}
 In terms of co-design, people can be invited to build Persona profiles or create their own representations that can be merged later in different instances \cite{prieto2018co}.
 
-\subsubsection{User journey}
-
 \subsubsection{knowledge mapping}
 This technique is commonly used to make visible how a group understands key ideas and their connections \cite{prieto2018co}. It encompasses different well-known methods like  mind maps, concept
 maps, dialogue maps and argument maps. For instance, mind maps are word lists structured and organized as trees to represent an idea, concept, or plan, while concept maps are diagrams that use lines to organize and represent relationships between concepts \cite{carrillo2017dashboard} (see \cite{okada2008knowledge} for details). Maps made by participants with pens and large sheets of paper are participatory in that everyone can contribute.
@@ -202,8 +200,6 @@ Reflection and interpretation are the primary objectives in building the first p
 
 Sketch-in is a group activity in which learners use sketching to solve design problems together, generally in quick sessions using basic drawing materials (post-its, paper sheets and whiteboards) \cite{prieto2018co}. For instance, participants can test data visualizations, color combinations, interaction styles, and define the characteristics that match the intended use..
 
-
-\subsubsection{Fabulation Superpowers}
 
 
 \subsection{Recent related work}
@@ -221,13 +217,13 @@ We carried out a study to assess the capture needs based on questionnaires and s
 The objective was to develop an explicit understanding of the users' context, tasks, needs and environments in order to enable the dynamic generation of dashboards. This study included a survey and semi-structured interviews.
 
 We adopt the framework proposed by \citet{chatti2012reference}, which identifies four questions around the analysis of learning data. We supplement theses questions with a fifthone, "When", which we felt was important for participants to better understand their interactions with learning dashboards. We thus list five questions where each refers to a contextual dimension "Who, why, what, how, when".
-\begin{description}
-    \item["Who" dimension]  dimension makes it possible to specify the users and their roles.
-    \item["Why" dimension] concerns the identification of users' objectives. In other words, it is used to identify why it is important for the user to use a learning dashboard.
-    \item["What" dimension]  is devoted to identifying the context of the observation objective and the indicators that users wish to visualize in order to improve their learning process.
-    \item["How" dimension]  concerns the description of the most appropriate way (i.e. the most comprehensible by the user) to visualize the indicators. This dimension highlights the notion of user preferences in terms of visualization to facilitate the interpretation of these indicators.
-    \item["When" dimension] makes it possible to specify how the dashboard should be used. 
-\end{description}
+\begin{itemize}
+    \item \textit{"Who" dimension}  dimension makes it possible to specify the users and their roles.
+    \item \textit{"Why" dimension} concerns the identification of users' objectives. In other words, it is used to identify why it is important for the user to use a learning dashboard.
+    \item \textit{"What" dimension}  is devoted to identifying the context of the observation objective and the indicators that users wish to visualize in order to improve their learning process.
+    \item \textit{"How" dimension}  concerns the description of the most appropriate way (i.e. the most comprehensible by the user) to visualize the indicators. This dimension highlights the notion of user preferences in terms of visualization to facilitate the interpretation of these indicators.
+    \item \textit{"When" dimension} makes it possible to specify how the dashboard should be used. 
+\end{itemize}
 
 After this initial study, we realized that users find it difficult to clearly express their needs through simple questioning. Potential users have significant difficulty projecting themselves into use (when interviewing designers of indicators) or picturing what is possible (when interviewing teachers who often have little culture regarding the use of digital data). Therefore, as a second step, we decided to conduct a participatory workshop.
 
@@ -235,20 +231,6 @@ After this initial study, we realized that users find it difficult to clearly ex
 We conducted this second study with 8 primary and secondary school teachers who share the same objective of monitoring their students' activities. Teachers use the Tactileo Map [13] application available on the tablet that was created to guide students during a field trip. This tablet provides various tools for students such as a notepad, a camera, an audio recorder and allows to collect traces of their use. This workshop was delivered in an open manner, without tools other than paper and whiteboards. It was followed by a wireframe stage and the development of a model.
 
 During this workshop, the wide range of needs, contexts of use and preferences led to a diversity of proposals that were difficult to formalize. To go further, an adapted tool was therefore necessary.
-
-\subsubsection{A Design Thinking approach}
-
-
-
-Design Thinking is a way of embedding the notion of iterative design into the
-design process. Coming up with ideas, building and testing in a short period of time is
-what Design Thinking brings to the table in comparison to other iterative processes
-(Ellingsen, 2016). In terms of innovation through iterations, Design Thinking specifies
-three main stages (Koh, Chai, Wong,  Hong, 2015): understanding, creation and
-delivery (see inner square in Figure 1). The iterative process starts with creating
-empathy and defining goals/expectations from stakeholders. This first part of the
-process can be exploratory and in some cases may set the tone of the project for the
-next stages (IDEO, 2016). 
 
 
 \subsubsection{Participatory design approach}
@@ -273,8 +255,7 @@ As in \cite{rivero2014mockup}, we seek to combine efficient needs capture tools 
 In this section, we present details of the design space for a learning dashboard. This design space allows us to identify the tools that support the capture of these needs. It also serves as a basis for harnessing the expression of requirements and reference dashboards. The second part of this section is devoted to the actual translation of this framework into an adapted framework.
 \subsubsection{Design space for learning analytics dashboard}
 The primary benefit of making a dashboard available to the intended users stems from the need to provide them with data and a representation of this data that is useful and most importantly, meaningful to them. These dashboards must therefore best meet the desired decision-making objectives of the learning process. We conceived our design space around the five dimensions described in \ref{sec:dimensions}. After the preliminary stages of our needs capture process, we have identified several elements that allow us to further characterize these dimensions, listed in \ref{tab:dim}.
-% Please add the following required packages to your document preamble:
-% \usepackage{booktabs}
+
 \begin{table}[]
     \label{tab:dim}
     \centering
@@ -335,8 +316,6 @@ The analysis of the different elemnts identified to qualify the different domain
     \item The organization element of the different selected visualizations corresponds to a paper prototyping step. We therefore propose a plateau, said prototyping plateau, corresponding to a display screen of a piece of equipment. This template effectively corresponds to the outline defined for a learning dashboard.
 \end{enumerate}
 
-% Please add the following required packages to your document preamble:
-% \usepackage{booktabs}
 \begingroup
 \setlength{\tabcolsep}{10pt} % Default value: 6pt
 \renewcommand{\arraystretch}{1.5} % Default value: 1
