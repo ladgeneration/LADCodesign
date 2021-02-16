@@ -15,14 +15,13 @@
 \usepackage{natbib}
 \usepackage{booktabs}
 \usepackage{graphicx}
-\usepackage[hmargin=3cm]{geometry}  
+\usepackage[hmargin=3cm]{geometry}   
 \linespread{1.3}
 \begin{document}
 
 \maketitle
 
 \section{Introduction} 
-The design and evaluation of learning dashboards is a major area of inquiry in learning analytics research.
 Learning analytics dashboards are designed to use learners' traces to present the computed indicators and other visual elements in a clear and intuitive way \citep{Brouns2015}.
 They have emerged as applications for visualizing and interacting with data collected in a learning environment in various forms \citep{Ramos2015}. \citet{Steiner2014} referred to them as ``visualizations of learning traces''. For \citet{Yoo2015}, a learning dashboard is ``a display which visualizes the results of educational data mining in a useful way''. 
 \citet{Schwendimann2017} identified a lack of an agreed and shared definition and thus proposed the following:
@@ -46,12 +45,13 @@ Despite being fairly recent educational tools, the research found many benefits 
 According to \citet{bennett2019four}, we can distinguish  three types of learner dashboards: predictive, modeler and descriptive. 
 \begin{itemize}
     \item Predictive types use machine learning based on computer algorithms that rely on a series of trace data to predict the likelihood that the students outcomes. Many works in this category (i.e, \citep{arnold2014exercise}) use these algorithms to produce at risk rating for individual students.
-    \item For example, aspects of a student's online behaviours such as communication, initiative, presence that have been derived from the number of messages, the number of comments in response to others' messages, time spent online, etc., are not included in this section. 
-    \item The third type of dashboard is descriptive and displays past learning behaviours
+    \item For example, aspects of a student's online behaviors such as communication, initiative, presence that have been derived from the number of messages, the number of comments in response to others' messages, time spent online, etc., are not included in this section. 
+    \item The third type of dashboard is descriptive and displays past learning behaviors
 \end{itemize}
 
-\section{Designing leanring analytics dashboards}
-There is a growing body of literature on learner dashboard design, and several literature reviews covering the field. A comprehensive literature review by \citet{bodily2017trends} involved identifying and analyzing 93 papers with respect to functionality, data sources, design analysis, student perceptions, and measured effects. They found that the clear majority of the papers focused on technical features such as data sources, functional aspects (e.g., visualization data, what the dashboard was intended to do) while only two papers reported on how students' behaviours were changed as a result of using the Learner Dashboards and only one-third (34 of 93) focused on students' perceptions of the design.
+\section{Issues in current LA design approaches}
+The design and evaluation of learning dashboards is a major area of inquiry in learning analytics research.
+There is a growing body of literature on learner dashboard design. A comprehensive literature review by \citet{bodily2017trends} involved identifying and analyzing 93 papers with respect to functionality, data sources, design analysis, student perceptions, and measured effects. They found that the clear majority of the papers focused on technical features such as data sources, functional aspects (e.g., visualization data, what the dashboard was intended to do) while only two papers reported on how students' behaviors were changed as a result of using the Learner Dashboards and only one-third (34 of 93) focused on students' perceptions of the design.
 \subsection{General design principles}
 Due to the recent emergence of learning analytics dashboards, there is still a scarcity of studies on their design principles \citep{Echeverria2018}. 
 \citet{Yoo2015} argued that, since dashboards are an instrument of communication, effective design is tied to several theoretical foundations, such as human cognition and perception, situational awareness and visualization technologies. In other words, their conceptualization must be based on an understanding of how humans see and think. 
@@ -74,16 +74,7 @@ From Few's principles, \citet{Yoo2015} drew three main implications:
 \end{enumerate}
 \textit{Situational awareness} is commonly understood in terms of people being consistently aware of what is going on, in order to predict what will be happening as well as to prepare what must be done. 
 
-\subsection{Principles of Students' dashboards}
-Draws on an  interpretive lens of student agency and empowerment \cite{slade2013learning}, \citet{bennett2019four} identified four  principles to inform the design of learner dashboards. The key point of these principles is that they shift attention from the technical features of dashboard design to the forefront, rather than to how they are interpreted by students. In doing so, the principles emphasize the values of student engagement and empowerment that \citet{prinsloo2017big}  propose as a key principle for the ethical adoption of learning analysis. The four principles are: 
-\begin{enumerate}
-    \item \textit{designs that are  customisable by students}: this suggests practical ways that the function and form of dashboards might be designed so that students can tailor the displays to suit their particular needs which would reflect their aims and aspirations, their personal dispositions 
-    \item \textit{foreground students sense making}: suggests making
-    available the data sources so that students are able to interrogate these, and not aggregating sources so that their provenance is lost. It suggests enabling students to contextualise the displays to their particular programme and circumstances
-    \item \textit{enable students to identify  actionable insights}: this suggests that designs should help students to interpret the data rather than digesting it for the student. This might mean providing guidance to the student about what is on view and prompts to help them to identify what actions they could take next.
-    \item \textit{dashboard use is embedded into educational processes}: this places attention on the ways
-    that the tools are integrated into the educational systems and processes. We know that uptake of learner dashboards has been low \cite{bodily2017trends} so a key focus in terms of the design is how it is embedded into student behaviours.
-\end{enumerate}
+
 
 \subsection{Limitation of the existing dashboards design approaches}
 %TODO: COPY/PASTE from etd9277_SShiraziBeheshtiha.pdf
@@ -111,34 +102,40 @@ which highlights the lack of specific visualizations and visual metaphors that a
 The review of \citet{Schwendimann2017} revealed that current focus hugely falls on the information that can be extracted from the log data rather than how individual differences might affect the interpretation of the information presented to the learner in terms of reflection and taking actions \citep{Gavsevic2015}. 
 
 %here :
-Studies undertaken by \citet*{bodily2017trends}  and \citet*{viberg2018current}  also point to  the need to understand users' views of dashboards qualitatively and in use rather than  as technical artefacts. This conception foregrounds the purpose of the tool in that it considers how  students make use of information presented via the dashboard and how it might change their  behaviour as a result. Dashboard conception needs also to focusse attention on the perspective of  the user, the learner, and on the purpose of dashboards as tools that provide feedback to students  to encourage them to make more informed decisions about their study behaviours \citet*{howell2018learning,bennett2019four}.
+Studies undertaken by \citet*{bodily2017trends}  and \citet*{viberg2018current}  also point to  the need to understand users' views of dashboards qualitatively and in use rather than  as technical artefacts. This conception foregrounds the purpose of the tool in that it considers how  students make use of information presented via the dashboard and how it might change their  behavior as a result. Dashboard conception needs also to focus attention on the perspective of  the user, the learner, and on the purpose of dashboards as tools that provide feedback to students  to encourage them to make more informed decisions about their study behaviors \citet*{howell2018learning,bennett2019four}.
 
+\subsection{Need to involve dashboard stakeholder in the design process}
+While the primary purpose of AL tools is to promote learning, there is a risk that these tools impose a number of assumptions that do not necessarily meet the students' or educators' needs \cite{dawson2015challenging}. One main reason identified by many authors (e.g. \cite{buckingham2019human}) is the lack of active stakeholder collaboration in the process of design of these tools.
+
+
+According to \citet{beattie2014creepy}, failure to involve learners and educators in the decision-making process can hinder the adoption and acceptance of LA innovations. 
+For instance, many authors point out that monitoring and analysis tools may be considered a risk by learners who may perceive that they no longer have the freedom to influence their learning environment and follow their own learning strategies.
 
 \section{CoDesign of learning analytics dashboard}
-\subsection{User-centered design}
+\subsection{Designing with stakeholders}
 The goal of designing data visualizations is to empower users to better understand the data presented by the visualization, so the user must be kept in mind when designing data visualizations. Two concepts are relevant in this context: human-centered design and user-centered design :
 \begin{itemize}
-    \item \textit{Human-centred design} focuses on creating systems that are easier to use by taking human factors into account.
-    \item \textit{User-centred design} involves users in the design process where design development is influenced by end-users. Model-based, story-based and scenario-based design are examples of user-centered design methodologies. 
+    \item \textit{Human-centered design} focuses on creating systems that are easier to use by taking human factors into account.
+    \item \textit{User-centered design} involves users in the design process where design development is influenced by end-users. Model-based, story-based and scenario-based design are examples of user-centered design methodologies. 
 \end{itemize}
 
-For \citet{vilpola2008method}, user-centred design is an an imperative part of creating products that ensures usefulness to users, and that allows creation of systems that fullfill users requirements. The authors highlight four principles of user-centred design: (1) user is actively involved; (2) user's tasks and technological function must be distinguished; (3) the design should be iterative; and (4) the design should be multidisciplinary. 
-\citet{vredenberg2001user}, while recongnizing that user-centred design improves product usefulness and usability, pointed out a lack of effectiveness measures to evaluate the success of a user-centred design effort.
+For \citet{vilpola2008method}, user-centered design is an an imperative part of creating products that ensures usefulness to users, and that allows creation of systems that fulfill users requirements. The authors highlight four principles of user-centered design: (1) user is actively involved; (2) user's tasks and technological function must be distinguished; (3) the design should be iterative; and (4) the design should be multidisciplinary. 
+\citet{vredenberg2001user}, while recognizing that user-centered design improves product usefulness and usability, pointed out a lack of effectiveness measures to evaluate the success of a user-centered design effort.
 
-\subsection{Participatory design}
+\subsubsection{Participatory design}
 The emergence of participatory design, according to \citet{bannon2018introduction}, was motivated by the need to involve users in the process of design, and to help mitigate situations of divergent ideas through democratic decision-making processes. Participatory design allows the involvement of the users of the system in the design process and gives stakeholders the opportunity to learn more about other stakeholders' views \cite{unger2013designing}.
-Often participatory design is referred to in discussions of user-centered design, so the difference between user-centered design and participatory design has become quite unclear \cite{bannon2018introduction}. Yet, participatory design is sometimes discussed alongside user-centred design, as a user-centred approach \cite{leng2018designing}.
+Often participatory design is referred to in discussions of user-centered design, so the difference between user-centered design and participatory design has become quite unclear \cite{bannon2018introduction}. Yet, participatory design is sometimes discussed alongside user-centered design, as a user-centered approach \cite{leng2018designing}.
 
 \citet{dearnley1983favour}identified two main reasons why participation in design emerged: firstly, as a means of mitigating the problem of conventional approaches that do not work; and secondly, because of ethical issues, claiming that end-users should have some influence over the environment in which they work.
 
 Arguing that the design paradigm of participatory design is constructivism,\citet{spinuzzi2005methodology} assumes that knowledge exists in a certain context, not just in a person’s mind. The author identified three stages of participatory design research: initial exploration of work, discovery processes and prototyping. 
 \begin{itemize}
-    \item \textit{Initial exploration of work}: this is the stage where users and designers meet to become familiar with how users work with each other. The used research methods are ethnographics and include observations, interviews and visits to the organisation.
-    \item \textit{Discovery processes}: during this stage, the design stakeholders use different techniques to improve their understanding, prioritize the organization of work, and construct a future vision for the workplace. The used methods include organisational games, role-play games, organisational toolkits, future workshops, storyboarding, and workflow models and interpretation sessions.
+    \item \textit{Initial exploration of work}: this is the stage where users and designers meet to become familiar with how users work with each other. The used research methods are ethnographics and include observations, interviews and visits to the organization.
+    \item \textit{Discovery processes}: during this stage, the design stakeholders use different techniques to improve their understanding, prioritize the organization of work, and construct a future vision for the workplace. The used methods include organizational games, role-play games, organizational toolkits, future workshops, storyboarding, and workflow models and interpretation sessions.
     \item \textit{Prototyping}: Here, users and designers form technological artifacts in an iterative manner, to fit into the future vision created in the second stage. This is achieved using different methods including mock-ups, paper prototyping, and cooperative prototyping.
 \end{itemize}
 
-\subsection{Participatory design}
+\subsubsection{Co-design}
 \textit{Co-design} derived from user-centered design as a particular case of co-creation where designers who are trained in creativity work together with non-designers during the design process. \cite{Sanders2008} define it as a process where designers and non-designers work together creatively ideally in all stages of design. A main claim of codesign is that it remedies design’s conventional exclusion of people from design outcomes that affect them \cite{taffe2015hybrid}.
 
 \cite{siu2003users} describes the co-design process as a facilitator that directs the level of end-user awareness of design choices, providing professional advice and guidance on the consequences of alternative choices while end-users provide advice and contribute to the contextual experience.  Research suggests that including end-users in the design process ensures appropriate design responses that are aligned with end-user requirements \cite{taffe2015hybrid}. 
@@ -153,29 +150,26 @@ designs \cite{fiorini2018application}, and engaging teachers throughout the prot
 Different methods and techniques are being used to apply participatory design. The most popular include brainstorming exercises, card sorting, group affinity diagraming, rapid paper prototyping, wireframe walkthroughs, preferences testing \cite{abel2013cross}. 
 
 \subsection{Human-centered design approach in LAD}
-Within the learning analytics community, designers and researchers are increasingly turning to human-centred design methods to adopt practical design techniques and knowledge to explore the design cycle of a learning analysis project. In the current literature on learning analysis, there are calls for theory-based and participatory approaches. \citet{alhadad2018visualizing}  noted that data visualization design should be grounded in theories of cognitive learning. For example, attention to issues of cognitive loading, attention, human perception and data literacy has direct design implications, such as avoiding visual clutter and breaking down data into segments that can be interpreted on the screen. This perspective is consistent with what data visualization researchers understand to be visual coding and interaction design decisions \citep{munzner2014visualization}, where choices regarding graphic types, interface components such as text and placement of visual markers, and interactive elements align with what is known about cognition and perception.
+\subsubsection{Emergence of HCD for LAD}
+Within the learning analytics community, designers and researchers are increasingly turning to human-centered design methods to adopt practical design techniques and knowledge to explore the design cycle of a learning analysis project. In the current literature on learning analysis, there are calls for theory-based and participatory approaches. \citet{alhadad2018visualizing}  noted that data visualization design should be grounded in theories of cognitive learning. For example, attention to issues of cognitive loading, attention, human perception and data literacy has direct design implications, such as avoiding visual clutter and breaking down data into segments that can be interpreted on the screen. This perspective is consistent with what data visualization researchers understand to be visual coding and interaction design decisions \citep{munzner2014visualization}, where choices regarding graphic types, interface components such as text and placement of visual markers, and interactive elements align with what is known about cognition and perception.
 However, as noted by \citet{dollinger2018co}, learning analytics researchers often work in applied contexts with real educators and educational settings, where it quickly becomes apparent that interface-level design decisions alone are not sufficient to productively promote effective use of visual dashboards. 
 
 
-
-\subsection{CoDesign approaches of LADs}
+\subsubsection{CoDesign approaches of LADs}
 In educational settings, designers and developers commonly rely on teams of visual designers, business specialists and educational theorists who produce educational innovations (Herold, 2015). I
-\citet*{mccoll2012health} define cocreation, or codesign, as \textit{the benefits realized from the integration of resources through activities and interactions with collaborators}. historicall, it is thus originally a marketing and management strategy, incorporating stakeholder and user resources into the design, process and analysis of services, breaking down the traditional boundaries between producers and users. Co-creation can benefit the current design of learning
+\citet*{mccoll2012health} define cocreation, or codesign, as \textit{the benefits realized from the integration of resources through activities and interactions with collaborators}. historical, it is thus originally a marketing and management strategy, incorporating stakeholder and user resources into the design, process and analysis of services, breaking down the traditional boundaries between producers and users. Co-creation can benefit the current design of learning
 analytics in several key ways.
 
 
 The benefits of co-designing a dashboard with the collaboration of multiple stakeholders with diverse perspectives are numerous. A dashboard design team should include education administrators, technology experts, data managers and, most importantly, learners. A co-design approach encourages alignment among multiple stakeholders with the purpose and main goal of the dashboard, and ensures consistent implementation by anticipating obstacles or potential difficulties in adopting the system, and increases innovation capacity and efficiency \citet{boscardin2018twelve}. A participatory approach also facilitates opportunities for consensus building and the creation of shared mental models for key learner outcomes, as well as the appropriate interpretation and use of evaluation data by multiple stakeholders. As pointed out by \citet{schuler1993participatory}, a co-design approach reflects a participatory design movement that emphasizes mutual learning, with users learning about the opportunities and constraints of the technology while designers learn about user practices and perspectives.
 
-
-
-
+\subsection{Recent related work}
 
 \section{Paddle: Participatory Design of Learning Analytics Dashboards}
-\subsection{Introduction}
-\subsection{Rationale and requirements for dashboard codesign}
+\subsection{Rationale and requirements}
 \subsubsection{An iterative refinement process}
 \label{sec:dimensions}
-We have conducted an iterative process to develop our needscapture method. First we carried out a study to assess needs based on questionnaires and semi-directive interviews, and then, after evaluating  the findings of this first study, we organized a participatory workshop with the stakeholders.
+We have conducted an iterative process to develop our needs-capture method. First we carried out a study to assess needs based on questionnaires and semi-directive interviews, and then, after evaluating  the findings of this first study, we organized a participatory workshop with the stakeholders.
 
 
 \paragraph{Phase 1: Questionnaires and interviews}
